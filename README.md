@@ -29,11 +29,15 @@ See https://matomo.org/docs/requirements/
 
 ## Install
 
-  * Upload matomo to your webserver
-  * Point your browser to the directory
-  * Follow the steps
-  * Add the given javascript code to your pages
-  * (You may also generate fake data to experiment, by enabling the plugin VisitorGenerator)
-
-See https://matomo.org/docs/installation/
-  
+  * Clone/Downlaod this repo into webserver folder
+  * Access the respective url and perform installation by following the steps
+  * After Installtion login to Matomo as SuperUser
+  * Naviagte to Administration > Personal > Settings
+  * In that page you can find  **API Authentication Token**
+  * Copy the token and paste it into **su_token.key** file and save it.
+  * Edit **config/config.ini.php** and add the following config
+    ````
+    [General]
+    cors_domains[] = *
+    ````
+  * You are done.
