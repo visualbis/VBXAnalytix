@@ -4,12 +4,14 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5
+class ComposerStaticInita4ae54f82da3b93f9002649c8dc78e59
 {
     public static $files = array (
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
         '04c6c5c2f7095ccf6c481d3e53e1776f' => __DIR__ . '/..' . '/mustangostang/spyc/Spyc.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '04961f1a2a957cae78e0318f3fa68e5d' => __DIR__ . '/..' . '/facebook/xhprof/xhprof_lib/utils/xhprof_lib.php',
         '55c3edc751468537ecca770818c9bed8' => __DIR__ . '/..' . '/facebook/xhprof/xhprof_lib/utils/xhprof_runs.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
@@ -31,6 +33,10 @@ class ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5
         'T' => 
         array (
             'Twig\\' => 5,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Ctype\\' => 23,
         ),
         'P' => 
         array (
@@ -95,6 +101,10 @@ class ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5
         'Twig\\' => 
         array (
             0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
         'Psr\\Log\\' => 
         array (
@@ -289,7 +299,7 @@ class ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5
         array (
             'JShrink' => 
             array (
-                0 => __DIR__ . '/..' . '/tedivm/jshrink/src',
+                0 => __DIR__ . '/..' . '/JShrink/src',
             ),
         ),
         'H' => 
@@ -356,9 +366,12 @@ class ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5
         'File_Iterator_Factory' => __DIR__ . '/..' . '/phpunit/php-file-iterator/src/Factory.php',
         'PDF417' => __DIR__ . '/..' . '/tecnickcom/tcpdf/include/barcodes/pdf417.php',
         'PHPUnit\\Framework\\Assert' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/Assert.php',
+        'PHPUnit\\Framework\\AssertionFailedError' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/AssertionFailedError.php',
         'PHPUnit\\Framework\\BaseTestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/BaseTestListener.php',
+        'PHPUnit\\Framework\\Test' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/Test.php',
         'PHPUnit\\Framework\\TestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestCase.php',
         'PHPUnit\\Framework\\TestListener' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestListener.php',
+        'PHPUnit\\Framework\\TestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/ForwardCompatibility/TestSuite.php',
         'PHPUnit_Exception' => __DIR__ . '/..' . '/phpunit/phpunit/src/Exception.php',
         'PHPUnit_Extensions_GroupTestSuite' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/GroupTestSuite.php',
         'PHPUnit_Extensions_PhptTestCase' => __DIR__ . '/..' . '/phpunit/phpunit/src/Extensions/PhptTestCase.php',
@@ -818,11 +831,11 @@ class ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5::$prefixesPsr0;
-            $loader->fallbackDirsPsr0 = ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5::$fallbackDirsPsr0;
-            $loader->classMap = ComposerStaticInitfbdaed65e01f91eb98c7af3c9a9cbbc5::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInita4ae54f82da3b93f9002649c8dc78e59::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInita4ae54f82da3b93f9002649c8dc78e59::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInita4ae54f82da3b93f9002649c8dc78e59::$prefixesPsr0;
+            $loader->fallbackDirsPsr0 = ComposerStaticInita4ae54f82da3b93f9002649c8dc78e59::$fallbackDirsPsr0;
+            $loader->classMap = ComposerStaticInita4ae54f82da3b93f9002649c8dc78e59::$classMap;
 
         }, null, ClassLoader::class);
     }

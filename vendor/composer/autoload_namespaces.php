@@ -19,7 +19,7 @@ return array(
     'PEAR' => array($vendorDir . '/pear/pear_exception'),
     'Net' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'Math' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
-    'JShrink' => array($vendorDir . '/tedivm/jshrink/src'),
+    'JShrink' => array($vendorDir . '/JShrink/src'),
     'HTML_' => array($baseDir . '/libs'),
     'Guzzle\\Tests' => array($vendorDir . '/guzzle/guzzle/tests'),
     'Guzzle' => array($vendorDir . '/guzzle/guzzle/src'),
